@@ -1,0 +1,12 @@
+ssh pi@192.168.0.57
+
+username: pi
+password: pi-top
+
+Make file in cursor
+cd projects/Pi-Top
+scp filename pi@192.168.0.57:~/
+ssh pi@192.168.0.57
+ls -l (to check if the file has been uploaded onto the pi-top)
+chmod +x filename
+python3 filename
